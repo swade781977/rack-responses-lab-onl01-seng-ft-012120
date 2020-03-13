@@ -7,6 +7,11 @@ class Application
     resp.write "#{a.strftime("%k:%M")}"
     
     if a.strftime("%p") == "AM"
-      
+      resp.write "Good Morning!"
+    else
+      resp.write "Good Afternoon!"
+    end
+    
+    
   end
 end
