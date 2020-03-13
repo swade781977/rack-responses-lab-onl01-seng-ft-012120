@@ -4,8 +4,9 @@ class Application
     resp = Rack::Response.new
     
     a = Time.now
-    resp.write "#{a.hour}:#{a.min"
+    resp.write "#{a.strftime("%k:%M")}"
     
-    if a < 
+    if a.strftime("%p") == "AM"
+      
   end
 end
